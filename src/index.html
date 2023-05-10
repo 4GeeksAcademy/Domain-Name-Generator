@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de dominios</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./4geeks.ico" />
+  </head>
 
-<head>
-  <script defer src="app.js"></script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Domain Name Generator</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-  <link rel="shortcut icon" href="./4geeks.ico" />
-</head>
-
-<body>
-
-  <main role="main">
-    <section class="">
-      <div class="container bg-light p-2">
-        <h1 class="jumbotron-heading">Generador de Nombres de Dominios</h1>
-        <p class="lead text-muted">
-          Crea un script que genere todas las combinaciones posibles de
-          nombres de dominio de una lista de pronombres, adjetivos y
-          sustantivos.
-        </p>
-      </div>
-    </section>
-
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" id="btn" type="button">
+  <body>
+    <div class="container p-3 my-3 border">
+      <h1>Este es mi generador de dominios</h1>
+    </div>
+    <div class="bottom p-6 bg-dark text-white text-center>
+    <div class=" col p-5">
+      <h2 class="mb-5" id="dom">""</h2>
+      <button type="button" class="btn btn-primary btn-block" id="btn">
         Generar nuevo dominio
-
       </button>
-
     </div>
-
-    <p class="mb-5" id="domain">" "</p>
-    </div>
-  </main>
-</body>
-
-
+    <script src="app.js"></script>
+  </body>
 </html>
