@@ -5,27 +5,40 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  document.getElementById("btn").addEventListener("click", () => {
-    document.getElementById("dom").innerHTML = donGenerator();
+window.onload = () => {
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#domain").innerHTML = nombreDominio();
   });
+};
 
-  var pronoun = ["the", "our"];
-  var adj = ["great", "big"];
-  var noun = ["jogger", "racoon"];
-  var dom = [".com", ".es", ".it"];
+let nombreDominio = () => {
+  let pronoun = ["el", "la", "nuestro"];
+  let adj = ["oscuro", "soleado", "valiente", "anciano"];
+  let noun = ["love", "tik", "tok", "ibai", "mercadona"];
 
-  let donGenerator = function(pronoun, adj, noun, dom) {
-    for (let i = 0; i < pronoun.length; i++) {
-      for (let j = 0; j < adj.length; j++) {
-        for (let k = 0; k < noun.length; k++) {
-          for (let l = 0; l < dom.length; l++) {
-            console.log(`${pronoun[i]} ${adj[j]} ${noun[k]} ${dom[l]}`);
-          }
-        }
-      }
-    }
-  };
+  let names = [
+    "luna",
+    "estrella",
+    "car",
+    "messi",
+    "sandia",
+    "melon",
+    "isla",
+    "agua"
+  ];
+  let domains = [".es", ".com", ".eu", ".org", ".net", ".info"];
 
-  donGenerator(pronoun, adj, noun, dom);
+  let pronounIndex = Math.floor(Math.random() * pronoun.length);
+  let adjIndex = Math.floor(Math.random() * adj.length);
+  let nounIndex = Math.floor(Math.random() * noun.length);
+  let namesIndex = Math.floor(Math.random() * names.length);
+  let domainsIndex = Math.floor(Math.random() * domains.length);
+
+  return (
+    pronoun[pronounIndex] +
+    adj[adjIndex] +
+    noun[nounIndex] +
+    names[namesIndex] +
+    domains[domainsIndex]
+  );
 };

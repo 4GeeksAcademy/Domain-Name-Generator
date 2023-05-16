@@ -1,1 +1,15 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#btn {
+  background-color: blue;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+#domain {
+  margin-left: 34%;
+}
+
+.container.p3 {
+  background-color: white;
+}
